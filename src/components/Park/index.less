@@ -1,0 +1,74 @@
+.park {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  width: 400px;
+  height: 100%;
+  overflow: hidden;
+  color: white;
+
+  img {
+    width: 100%;
+    height: 200px;
+  }
+
+  #parkCard {
+    background-color: inherit;
+    border: none;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    height: 100%;
+    display: flex;
+    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 1px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      background: #1A1A5A;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      background: #ededed;
+    }
+
+    .el-button {
+      float: right;
+      padding: 3px 0;
+    }
+
+    .el-card__body {
+      padding: 0;
+    }
+
+    .park-content {
+      padding: 10px;
+      font-size: 0.9vw;
+
+      .el-carousel {
+        margin: 5px 0;
+      }
+
+      p {
+        color: #ccc;
+        margin: 5px 0;
+        font-size: 0.9vw;
+      }
+
+      .content-item {
+        text-indent: 2em;
+        padding: 0 5px;
+      }
+    }
+  }
+}

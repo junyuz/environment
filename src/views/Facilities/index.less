@@ -1,0 +1,133 @@
+#facilities {
+  padding: 15px;
+  color: white;
+
+  .facilities-title {
+    padding: 15px 0;
+    text-align: center;
+    color: aqua;
+    font-size: 1vw;
+  }
+
+  .facilities-content {
+    display: flex;
+    height: 100%;
+
+    .f-list {
+      width: 20%;
+      height: 100%;
+      float: left;
+      border-right: 1px solid #ccc;
+      overflow: scroll;
+      overflow-x: hidden;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 10px;
+        height: 1px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        background: #1A1A5A;
+      }
+
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        background: #ededed;
+      }
+
+      p {
+        padding: 10px 5px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      li {
+        padding: 5px 15px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+
+    .f-content {
+      flex: 1;
+      padding: 15px;
+      overflow: scroll;
+      overflow-x: hidden;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 10px;
+        height: 1px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        background: #1A1A5A;
+      }
+
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        background: #ededed;
+      }
+
+      p {
+        padding: 15px 0;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .f-main {
+
+        .el-carousel {
+          width: 30%;
+          float: left;
+          margin: 0 15px 15px 0;
+        }
+
+        p {
+          text-indent: 2em;
+          text-align: left;
+        }
+      }
+
+      .f-other {
+        clear: both;
+
+        p {
+          text-indent: 2em;
+          text-align: left;
+        }
+
+        .el-carousel {
+          width: 20%;
+          float: left;
+          margin: 0 15px 15px 0;
+        }
+
+        .el-tabs__item {
+          color: #fff;
+
+          &:hover {
+            color: #409EFF;
+          }
+        }
+
+        .el-tabs__item.is-active {
+          color: #409EFF;
+        }
+      }
+    }
+  }
+}

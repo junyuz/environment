@@ -1,0 +1,63 @@
+.camera {
+  position: absolute;
+  right: 423px;
+  bottom: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  #camera{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: #fff;
+  }
+
+  .co {
+    float: right;
+    padding: 3px 0;
+  }
+
+  video {
+    width: 400px;
+  }
+
+  .camera-bottom {
+    padding: 15px 0;
+    overflow: hidden;
+  }
+
+  ul {
+    width: 127px;
+    margin: 0 auto;
+  }
+
+  li {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    font-size: 23px;
+    margin: 1px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .c1 {
+      transform: rotate(45deg);
+    }
+
+    .c2 {
+      transform: rotate(-45deg);
+    }
+
+    .c3 {
+      transform: rotate(-45deg);
+    }
+
+    .c4 {
+      transform: rotate(45deg);
+    }
+  }
+}

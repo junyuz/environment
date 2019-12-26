@@ -1,0 +1,42 @@
+﻿{
+    "serverURL": "http://data.marsgis.cn/",
+    "map3d": {
+        "homeButton": false,
+        "sceneModePicker": false,
+        "navigationHelpButton": false,
+        "infoBox": false,
+        "vrButton": false,
+        "fullscreenButton": false,
+        "geocoder": true,
+        "showRenderLoopErrors": false,
+        "minzoom": 1,
+        "maxzoom": 20000000,
+        "contextmenu": false,
+        "mouseZoom": false,
+        "location": {
+            "crs": "",
+            "format": "<div class='init'><div>视高:{height}米</div><div>方向:{heading}度</div><div>海拔:{z}米</div><div>纬度:{y}</div><div>经度:{x}</div></div>"
+        },
+        "basemaps": [
+            {
+                "type": "arcgis",
+                "visible": false,
+                "url": "http://map.geoq.cn/arcgis/rest/services/ChinaOnlineStreetPurplishBlue/MapServer"
+            },
+            {
+                "pid": 10,
+                "name": "ArcGIS卫星",
+                "type": "arcgis",
+                "visible": false,
+                "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+            },
+            {
+                "pid": 10,
+                "name": "谷歌卫星",
+                "type": "www_google",
+                "crs": "wgs84",
+                "visible": true
+            }
+        ]
+    }
+}

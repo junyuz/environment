@@ -1,0 +1,78 @@
+.location {
+  li {
+    list-style: none;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.el-dialog {
+
+  background-color: rgba(0,0,0,0.7)!important;
+  .el-dialog__header {
+    padding: 15px 15px 0 15px;
+
+    .el-dialog__title{
+      color: white;
+    }
+
+    i {
+      font-size: 25px;
+      margin-top: -5px;
+    }
+  }
+
+  .el-dialog__body {
+    padding: 15px;
+  }
+
+  .el-table th,
+    .el-table tr {
+      background-color: rgba(255, 255, 255, 0) !important;
+      color: white;
+    }
+
+    .el-table tbody tr:hover>td {
+      background-color: inherit !important;
+    }
+
+    .el-table,
+    .el-table__expanded-cell {
+      background-color: inherit;
+    }
+
+}
+
+.el-tabs.el-tabs--card.el-tabs--top {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+
+  .el-tabs__item {
+    color: #fff;
+
+    &:hover {
+      color: #409EFF;
+    }
+  }
+
+  .el-tabs__item.is-active {
+    color: #409EFF;
+  }
+
+  .el-tabs__nav.is-top,
+  .el-tabs__item.is-top {
+    border: none;
+  }
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 10px;
+}

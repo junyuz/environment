@@ -1,0 +1,125 @@
+@bg: rgba(255, 255, 255, 0.1);
+@fc: #fff;
+@logo: deepskyblue;
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-image: url('../../assets/environment.jpg');
+  background-size: cover;
+
+  .nav {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: @bg;
+    padding: 0 15px;
+    overflow: hidden;
+    color: @fc;
+    display: flex;
+
+    .logo {
+      font-size: 1.2vw;
+      float: left;
+      color: @logo;
+      font-weight: bold;
+
+      img {
+        float: left;
+        height: 50px;
+        margin: 5px 10px;
+      }
+    }
+
+    .nav-menu {
+      margin-left: 100px;
+      flex: 1;
+
+      a {
+        text-decoration: none;
+        padding: 0 15px;
+        color: @fc;
+        display: block;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        i {
+          margin-right: 15px;
+          font-size: 1vw;
+        }
+      }
+
+      .router-active:hover {
+        transform: scale(1.1);
+      }
+
+      li {
+        float: left;
+        list-style: none;
+
+        .el-input-group {
+          padding: 0 20px;
+        }
+      }
+
+      .line {
+        float: right;
+
+        .el-input__inner {
+          border: none;
+          height: 30px;
+        }
+
+        .el-input-group__append {
+          background-color: @fc;
+          border: none;
+
+          &:hover {
+            font-weight: bold;
+          }
+        }
+
+      }
+    }
+  }
+
+  .content {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-direction: column;
+
+    &::-webkit-scrollbar {
+      width: 0px;
+      height: 1px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      background: #1A1A5A;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      background: #ededed;
+    }
+  }
+}
+
+.el-popper[x-placement^=bottom] .popper__arrow {
+  border-bottom-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.el-popper[x-placement^=bottom] .popper__arrow::after {
+  border-bottom-color: rgba(0, 0, 0, 0.7) !important;
+}

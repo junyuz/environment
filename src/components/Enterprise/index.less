@@ -1,0 +1,134 @@
+.enterprise {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  width: 400px;
+  height: 100%;
+  overflow: hidden;
+  color: white;
+
+  img {
+    width: 100%;
+    height: 200px;
+  }
+
+  #enterprise {
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    display: flex;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-direction: column;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 1px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      background: #1A1A5A;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      background: #ededed;
+    }
+
+    span {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .el-button {
+      float: right;
+      padding: 3px 0;
+    }
+
+    .el-card__body {
+      padding: 0;
+    }
+
+    .enterprise-content {
+      padding: 10px;
+
+      .el-carousel {
+        margin: 5px 0;
+      }
+
+      .content-item {
+        text-indent: 2em;
+        padding: 0 5px;
+      }
+
+      p {
+        color: #ccc;
+        margin: 5px 0;
+        font-size: 0.9vw;
+        clear: both;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .fileList {
+        max-height: 310px;
+        overflow: scroll;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        &::-webkit-scrollbar {
+          width: 10px;
+          height: 1px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          border-radius: 10px;
+          box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+          background: #1A1A5A;
+        }
+
+        &::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+          border-radius: 10px;
+          background: #ededed;
+        }
+
+        li {
+          padding: 5px;
+          color: dodgerblue;
+          cursor: pointer;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+
+          &:hover {
+            text-decoration: underline;
+          }
+
+          span{
+            color: #ccc;
+            float: right;
+            font-size: 0.9vw;
+          }
+        }
+      }
+
+      .content-type {
+
+        li {
+          width: 50%;
+          padding: 5px 0;
+          float: left;
+        }
+
+      }
+    }
+  }
+
+}

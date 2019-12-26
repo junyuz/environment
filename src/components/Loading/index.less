@@ -1,0 +1,77 @@
+@bg: black;
+@fc: white;
+
+.loading {
+  width: 100%;
+  height: 100%;
+  background-color: @bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    color: @fc;
+    margin: 5px;
+    text-align: center;
+    font-size: 0.7vw;
+  }
+
+  span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    background-color: @fc;
+    border-radius: 50%;
+    float: left;
+    transition: all 0.1s linear;
+  }
+
+  .load-one {
+    animation: one 0.6s 0.1s infinite alternate;
+
+    @keyframes one {
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+    }
+  }
+
+  .load-two {
+    animation: two 0.6s 0.3s infinite alternate;
+
+    @keyframes two {
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+    }
+  }
+
+  .load-three {
+    animation: three 0.6s 0.5s infinite alternate;
+
+    @keyframes three {
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+    }
+  }
+}
